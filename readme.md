@@ -14,10 +14,12 @@ levels.
 
 **Beta Games** is a modern, offline X and O game built using:
 
--   ⚡ TypeScript
--   ⚛️ Component-based architecture
--   🧠 Local game logic (no server required)
--   📴 Fully offline functionality
+-   TypeScript
+-    JAVA - Handling the logic of the frontend design of XML
+-    XML - android app design UI
+-   Component-based architecture
+-   Local game logic (no server required)
+-   Fully offline functionality
 
 All game decisions --- including player moves, AI calculations, win
 detection, and draw detection --- are handled locally within the
@@ -32,8 +34,10 @@ This game works completely offline.
 ✔ No API calls\
 ✔ No backend server\
 ✔ No database\
-✔ No internet connection required
+✔ Internet connection required to Open the app
+✔ No internet connection required to play the games
 
+Once the page has loaded the logic and the game execution is stored on the app.
 All logic is stored and executed inside:
 
     services/gameLogic.ts
@@ -45,45 +49,6 @@ The AI logic includes:
 -   Priority move selection\
 -   Smart move evaluation\
 -   Difficulty level scaling
-
-------------------------------------------------------------------------
-
-## 📁 Project Structure
-
-Below is the folder structure of the project:
-
-    beta-games-_x-and-o/
-    │
-    ├── asset/
-    │   └── betagames.png
-    │
-    ├── components/
-    │   ├── AuthScreen.tsx
-    │   ├── GameMenu.tsx
-    │   ├── GameView.tsx
-    │   ├── LoadingScreen.tsx
-    │   ├── ModeSelection.tsx
-    │   ├── PlayerSelection.tsx
-    │   └── SymbolSelection.tsx
-    │
-    ├── dist/
-    ├── node_modules/
-    │
-    ├── services/
-    │   └── gameLogic.ts
-    │
-    ├── .env.local
-    ├── .gitignore
-    ├── App.tsx
-    ├── index.html
-    ├── index.tsx
-    ├── metadata.json
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-    ├── tsconfig.json
-    ├── types.ts
-    └── vite.config.ts
 
 ------------------------------------------------------------------------
 
@@ -115,36 +80,12 @@ Allows users to choose X or O.
 
 ### ⚙ services/gameLogic.ts
 
-Contains: - Board representation - AI algorithm - Win/draw detection -
-Move validation - Game reset logic
-
-------------------------------------------------------------------------
-
-## 🛠️ Installation & Setup
-
-1.  Clone the repository:
-
-``` bash
-git clone https://github.com/Dev-Laolu
-```
-
-2.  Navigate into the project folder:
-
-``` bash
-cd beta-games-_x-and-o
-```
-
-3.  Install dependencies:
-
-``` bash
-npm install
-```
-
-4.  Run the development server:
-
-``` bash
-npm run dev
-```
+**Contains:** 
+- Board representation
+- AI algorithm 
+- Win/draw detection 
+- Move validation
+- Game reset logic
 
 ------------------------------------------------------------------------
 
